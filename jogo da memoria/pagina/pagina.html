@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/game.css">
+  <link rel="shortcut icon" href="../imagens/brainn.png" type="image/x-icon">
+  <script defer src="../js/game.js"></script>
+  
+  <title>Jogo da Memória</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <span class="player"></span>
+      <span>Tempo: <span class="timer">00</span></span>
+    </header>
+    <div class="grid"></div>
+
+    <p>Veja sua colocação no ranking!</p>
+    <button id="view-rank" style="cursor: pointer">Ranking</button> <!-- Botão para abrir o ranking -->
+
+    <div id="ranking-popup" class="popup">
+      <div class="popup-content">
+          <span class="close">&times;</span>
+
+          <!-- Botão de aba -->
+          <button class="accordion">Ver Ranking de Jogadores</button>
+          
+          <!-- Painel expansível com a tabela de jogadores -->
+          <div class="accordion-panel">
+            <div class="ranking-container">
+              <h2>Ranking de Jogadores</h2>
+              <table class="ranking-table">
+                <thead>
+                  <tr>
+                    <th>Jogador</th>
+                    <th>Tempo (segundos)</th>
+                  </tr>
+                </thead>
+                <tbody class="ranking-list">
+                </tbody>
+              </table>    
+            </div>
+          </div>
+      </div>
+    </div>
+    
+  </main>
+  
+</body>
+
+</html>
